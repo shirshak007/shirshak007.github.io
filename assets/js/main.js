@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('about-img').src = data.personal.about_image;
             
             var typed = new Typed('#typewriter', {
-                  strings: [data.personal.name, "a full-stack developer", "a tech savvy", "a foody"],
+                  strings: [data.personal.name, "a full-stack developer", "a hobbyist photographer", "a foody"],
                   typeSpeed: 100,
                   backSpeed: 40,
                   backDelay: 1500,
@@ -191,6 +191,63 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
             
+            // Pupulate Gallery
+            // In your main.js, inside the fetch().then() block:
+            if (data.photography) {
+                const photoContainer = document.getElementById('photography-container');
+                const equipmentContainer = document.getElementById('equipment-container');
+                const description = document.querySelector('.photography-description');
+                
+                // Set description
+                description.textContent = data.photography.description;
+                
+                // Load photos
+                data.photography.photos.forEach(photo => {
+                    const photoCard = document.createElement('div');
+                    photoCard.className = `photo-card ${photo.category.toLowerCase()}`;
+                    photoCard.innerHTML = `
+                        <img src="${photo.image}" alt="${photo.title}" class="photo-img">
+                        <div class="photo-overlay">
+                            <h4 class="photo-title">${photo.title}</h4>
+                            <div class="photo-meta">
+                                <span>${photo.category}</span>
+                                <span>${photo.year}</span>
+                            </div>
+                        </div>
+                    `;
+                    photoContainer.appendChild(photoCard);
+                });
+                
+                // Load equipment
+                data.photography.equipment.forEach(item => {
+                    const equipmentItem = document.createElement('div');
+                    equipmentItem.className = 'equipment-item';
+                    equipmentItem.textContent = item;
+                    equipmentContainer.appendChild(equipmentItem);
+                });
+                
+                // Filter functionality
+                const filterBtns = document.querySelectorAll('.filter-btn');
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        // Update active button
+                        filterBtns.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        
+                        const filter = btn.dataset.filter;
+                        const photoCards = document.querySelectorAll('.photo-card');
+                        
+                        photoCards.forEach(card => {
+                            if (filter === 'all' || card.classList.contains(filter)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+
             // Populate certificates
             const certificatesContainer = document.getElementById('certificates-container');
             data.certificates.forEach(cert => {

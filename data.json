@@ -142,5 +142,54 @@
 		    "url": "https://github.com/shirshak007/core-PHP-Email-Sending",
 		    "topics": ["PHP", "Gmail", "API"]
 		}
-	]
+	],
+	"photography": {
+		"title": "My Photo Galary",
+		"description": "Capturing moments through my lens - birds, nature, macro, astro photography",
+		"photos": [
+		    {
+		        "title": "Full Moon",
+		        "image": "assets/images/photography/1.JPG",
+		        "category": "Night",
+		        "year": "2023"
+		    },
+		    {
+		        "title": "Indian White Eye",
+		        "image": "assets/images/photography/2.JPG",
+		        "category": "Wildlife",
+		        "year": "2024"
+		    },
+		    {
+		        "title": "Purple-rumped Sunbird Series",
+		        "image": "assets/images/photography/3.JPG",
+		        "category": "Wildlife",
+		        "year": "2024"
+		    },
+		    {
+		        "title": "Dragonfly in my garden",
+		        "image": "assets/images/photography/4.JPG",
+		        "category": "Nature",
+		        "year": "2024"
+		    },
+		    {
+		        "title": "Boat Life",
+		        "image": "assets/images/photography/5.JPG",
+		        "category": "Landscape",
+		        "year": "2022"
+		    },
+		    {
+		        "title": "Stray Dog",
+		        "image": "assets/images/photography/6.jpg",
+		        "category": "Street",
+		        "year": "2023"
+		    }
+		],
+		"equipment": [
+		    "Sony Alpha 6100",
+		    "16-50mm Zoom Lens",
+		    "55-210mm Telephoto Zoom Lens",
+		    "Tripod",
+		    "Polarizing Filters"
+		]
+	}
 }
