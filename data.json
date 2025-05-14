@@ -1,0 +1,146 @@
+{
+  "personal": {
+    "name": "Shirshak Das",
+    "mobile": "+91 9733456836",
+    "email": "shirshak.das007@gmail.com",
+    "address": "Belsingha, Falta South 24, Parganas, WB, India, 743504",
+    "dob": "15 July 1996",
+    "gender": "Male",
+    "bloodGroup": "B+",
+    "languages": ["English", "Bengali", "Hindi"],
+    "hobbies": ["Photography", "Drawing"],
+    "image": "assets/images/profile.jpg",
+    "about_image": "assets/images/about.jpg",
+    "logo": "assets/images/logo.png",
+    "logo_light": "assets/images/logo-light.png",
+    "favicon": "assets/images/favicon.png",
+    "title": "Full Stack Developer",
+    "tagline": "Building digital experiences that matter",
+    "about": "I'm a passionate Full Stack Developer with expertise in PHP, MySQL, ReactJS, and various web technologies. I love creating efficient, scalable, and user-friendly applications."
+  },
+  "experience": [
+    {
+      "title": "Programming Assistant",
+      "company": "Ramakrishna Mission Vivekananda Educational & Research Institute, Howrah",
+      "period": "November 2020 - Present",
+      "description": [
+        "Developing and maintaining ERP software and institutional websites for various departmental needs in alignment with UGC norms and institutional requirements and automation.",
+        "Managing server maintenance and other technical tasks.",
+        "Integrating payment gateways for fees and donations."
+      ],
+      "skills": "PHP, MySQL, CodeIgniter 3, Google API, Facebook Graph API, Zoho Forms Webhooks, Wordpress REST API, HTML, JS, CSS, PWA, JQuery, Wordpress, Linux, Cronjob"
+    },
+    {
+      "title": "Junior Developer",
+      "company": "Garidakho Pvt. Ltd, Kolkata",
+      "period": "September 2020 - November 2020",
+      "description": [
+        "Developed websites using ReactJS.",
+        "Collaborated with the team to enhance user interface and experience."
+      ],
+      "skills": "ReactJS, PHP, MySQL"
+    }
+  ],
+  "education": [
+    {
+      "degree": "MSc in Computer & Information Science",
+      "institution": "University of Calcutta, Kolkata",
+      "period": "August 2017 – July 2019",
+      "grade": "1st Class – 67.96%"
+    },
+    {
+      "degree": "BSc in Computer Science",
+      "institution": "Ramakrishna Mission Residential College, Narendrapur",
+      "period": "July 2014 – June 2017",
+      "grade": "1st Class – 81.75%"
+    },
+    {
+      "degree": "Higher Secondary",
+      "institution": "Fatepur Srinath Institution",
+      "period": "Classes of 2014",
+      "grade": "1st Division – 70%"
+    },
+    {
+      "degree": "Secondary",
+      "institution": "Belsingha Sikshayatan",
+      "period": "Classes of 2012",
+      "grade": "1st Division – 85.42%"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Lip Detection and Key Point Extraction for Facial Expressions Detection",
+      "institution": "Ramakrishna Mission Residential College, Narendrapur",
+      "period": "January 2017 to June 2017"
+    },
+    {
+      "title": "Enhancing WSN lifetime using on-demand charging of sensor nodes through a mobile charger",
+      "institution": "University of Calcutta",
+      "period": "January 2019 to June 2019"
+    }
+  ],
+  "skills": [
+    "PHP", "MySQL", "Codefgniter", "ReactJS", "OOP", "HTML", "Javascript", "CSS", "JQuery", 
+    "Wordpress", "C", "Matlab", "Java", "JSP", "Google API", "Facebook Graph API", 
+    "Zoho Forms Webhooks", "Payment Gateway Integrations", "Linux", "Cronjob", 
+    "using PHP & JS libraries", "Ajax", "Axios", "MaterialUI", "ES6", "PHPMyAdmin", 
+    "Problem Solving"
+  ],
+  "certificates": [
+    {
+      "platform": "Hackerrank",
+      "achievements": ["SQL (Basic, Intermediate & Advanced)", "Javascript (Basic & Intermediate)", "Rest API (Intermediate)"]
+    },
+    {
+      "platform": "FreeCodeCamp",
+      "achievements": ["Responsive Web Design"]
+    },
+    {
+      "platform": "HP Life",
+      "achievements": ["AI for Beginners"]
+    }
+  ],
+  "achievements": {
+    "stackOverflow": {
+      "acceptedAnswers": "1/4",
+      "badges": "2 silver & 10 bronze",
+      "reach": "15k people"
+    }
+  },
+  "portfolio": {
+    "github": "github.com/shirshak007",
+    "linkedin": "linkedin.com/in/shirshak007"
+  },
+  "githubProjects": [
+		{
+		    "name": "Timetable in Dynamic Timeline",
+		    "description": "In this PHP class-routine/schedule each class is placed dynamically in various time of a day-timeline. Suppose a class starts at 10 AM , it will automatically be placed after 10 AM mark horizontally.",
+		    "url": "https://github.com/shirshak007/php-timetable-in-dynamic-timelinehttps://github.com/shirshak007/erp-system",
+		    "topics": ["PHP", "HTML", "JSON", "CSS", "Javascript", "JQuery"]
+		},
+		{
+		    "name": "Simple Video Player",
+		    "description": "Plays video from a playlist. Playlist is created from filesystem.",
+		    "url": "https://github.com/shirshak007/video-player",
+		   "topics": ["PHP", "REST API", "JSON", "CSS", "Javascript", "JQuery"]
+		},
+		{
+		    "name": "Simple Image Slider",
+		    "description": "This is a simple image slider using js and css. You can use it in php also. You can change images using keyboard arrow keys You can change images using the arrow buttons in the slider itself You can change images by clicking the thumbnails below",
+		    "url": "https://github.com/shirshak007/simpleImageSliderJsCss",
+		   "topics": ["JSON", "CSS", "Javascript", "JQuery"]
+		},
+		{
+		    "name": "HTML Table to Excel",
+		    "description": "This simple JS code convert html table to ms excel.",
+		    "url": "https://github.com/shirshak007/html-table-to-excel",
+		    "topics": ["HTML", "Javascript"]
+		},
+		{
+		    "name": "PHP Email Sendingl",
+		    "description": "Send email using core php and gmail",
+		    "url": "https://github.com/shirshak007/core-PHP-Email-Sending",
+		    "topics": ["PHP", "Gmail", "API"]
+		}
+	]
+}

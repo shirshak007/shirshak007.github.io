@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="site-title"></title>
+    <link rel="icon" href="" id="favicon" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- <div id="particles-js"></div>  Should be first element in body -->
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo animate__animated animate__fadeInLeft"><img src=""  id="logo" height="48x;"></a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInDown" data-aos="fade-down" style="font-size:42px;" >Hello, I am <span id="typewriter"></span></h1>
+                
+                <div class="hero-btns animate__animated animate__fadeInUp animate__delay-3s" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">My Work</a>
+                </div>
+                <div class="animate__animated animate__fadeIn animate__delay-2s" data-aos="fade-up" data-aos-delay="400" style="margin-top:20px;"  id="hero-tagline"></div>
+            </div>
+            <div class="hero-image" >
+                <div class="image-wrapper">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Profile Photo" class="profile-img" id="profile-img">
+                    <div class="circle-animation" data-aos-delay="800" ></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="About Me Image" id="about-img">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Who am I?</h3>
+                    <p id="about-me"></p>
+                    
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value" id="name"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value" id="email"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Mobile:</span>
+                            <span class="info-value" id="mobile"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">From:</span>
+                            <span class="info-value" id="address"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" id="github-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" id="linkedin-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" id="email-link"  target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Experience</span></h2>
+            <div class="timeline" id="experience-timeline"></div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Education</span></h2>
+            <div class="timeline" id="education-timeline"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Skills</span></h2>
+            <div class="skills-container" id="skills-container"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Projects</span></h2>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+    <section id="github" class="section github-projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">GitHub <span>Projects</span></h2>
+            <div class="github-grid" id="github-projects-container"></div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Certificates</span></h2>
+            <div class="certificates-container" id="certificates-container"></div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My <span>Achievements</span></h2>
+            <div class="achievement-card" data-aos="zoom-in">
+                <div class="achievement-icon">
+                    <i class="fab fa-stack-overflow"></i>
+                </div>
+                <div class="achievement-content">
+                    <h3>Stack Overflow</h3>
+                    <div class="achievement-stats">
+                        <div class="stat-item">
+                            <span class="stat-value" id="so-answers"></span>
+                            <span class="stat-label">Accepted Answers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="so-badges"></span>
+                            <span class="stat-label">Badges Earned</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value" id="so-reach"></span>
+                            <span class="stat-label">People Reached</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In <span>Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span id="contact-mobile"></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span id="contact-email"></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="contact-address"></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" id="contact-github" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" id="contact-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left" data-aos-delay="200">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo"><img src=""  id="logo-footer" height="60px;"><span>.</span></a>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> <span id="footer-mobile"></span></li>
+                        <li><i class="fas fa-envelope"></i> <span id="footer-email"></span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span id="footer-address"></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shirshak Das. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>
