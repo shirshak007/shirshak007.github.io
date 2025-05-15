@@ -100,22 +100,28 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Populate experience
             const experienceTimeline = document.getElementById('experience-timeline');
-            data.experience.forEach((exp, index) => {
-                const item = document.createElement('div');
-                item.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'}`;
-                item.innerHTML = `
-                    <div class="timeline-content" data-aos="fade-up">
-                        <h3>${exp.title}</h3>
-                        <h4>${exp.company}</h4>
-                        <p class="timeline-date">${exp.period}</p>
-                        <ul>
-                            ${exp.description.map(desc => `<li>${desc}</li>`).join('')}
-                        </ul>
-                        <p class="timeline-skills">${exp.skills}</p>
-                    </div>
-                `;
-                experienceTimeline.appendChild(item);
-            });
+            // Update your experience loop to include a custom bullet class
+data.experience.forEach((exp, index) => {
+    const item = document.createElement('div');
+    item.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'}`;
+    item.innerHTML = `
+        <div class="timeline-content" data-aos="fade-up">
+            <h3>${exp.title}</h3>
+            <h4>${exp.company}</h4>
+            <p class="timeline-date">${exp.period}</p>
+            <ul class="timeline-description">
+                ${exp.description.map(desc => `
+                    <li>
+                        <div class="timeline-bullet"></div>
+                        <span>${desc}</span>
+                    </li>
+                `).join('')}
+            </ul>
+            <p class="timeline-skills">${exp.skills}</p>
+        </div>
+    `;
+    experienceTimeline.appendChild(item);
+});
             
             // Populate education
             const educationTimeline = document.getElementById('education-timeline');
