@@ -621,6 +621,26 @@ section {
     color: var(--primary-color);
 }
 
+.certificate-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.certificate-card a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+}
+
+.profile-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    background: rgba(58, 134, 255, 0.1);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
 /* Achievements Section */
 .achievement-card {
     max-width: 600px;
@@ -638,7 +658,7 @@ section {
     width: 80px;
     height: 80px;
     background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    border-radius: 50%;
+    border-radius: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -862,7 +882,10 @@ section {
         flex-direction: column;
         text-align: center;
     }
-
+    .hero h1 {
+        font-size:2.5rem;
+    }
+    
     .hero-content {
         margin-bottom: 50px;
         padding-right: 0;
@@ -948,7 +971,7 @@ section {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero h2 {
@@ -963,7 +986,7 @@ section {
 
 @media (max-width: 576px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .hero h2 {
@@ -997,31 +1020,25 @@ section {
         flex-direction: column;
         gap: 15px;
     }
-    .typewriter {
-    font-size:22px;
-    }
 }
 
 #typewriter {
       font-weight: bold;
       color: #4569a8;
       min-height: 1.5em; /* reserve vertical space */
-    }
-.typewriter {
-       font-size:38px,;
 }
-    .typed-cursor {
-      font-weight: normal;
-      font-size: 1em;
-      color: #000;
-      animation: blink 0.7s infinite;
-    }
+.typed-cursor {
+        font-weight: normal;
+        font-size: 1em;
+        color: #000;
+        animation: blink 0.7s infinite;
+}
 
-    @keyframes blink {
-      0%, 100% { opacity: 1 }
-      50% { opacity: 0 }
-    }
-    
+@keyframes blink {
+        0%, 100% { opacity: 1 }
+        50% { opacity: 0 }
+}
+
     /* GitHub Projects Section */
 .github-projects {
     background-color: #f9f9f9;
@@ -1099,24 +1116,6 @@ section {
     border-top: 1px solid #e1e4e8;
 }
 
-.github-link {
-    display: inline-flex;
-    align-items: center;
-    color: #0366d6;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
-
-.github-link i {
-    margin-right: 8px;
-    font-size: 1rem;
-}
-
-.github-link:hover {
-    color: var(--primary-color);
-}
 
 /* Photography Section */
 .photography {
@@ -1236,4 +1235,40 @@ section {
     padding: 8px 15px;
     border-radius: 30px;
     font-size: 0.9rem;
+}
+
+/* Skills Section */
+/* Skills Section */
+.skill-category {
+    margin-bottom: 30px;
+}
+
+.skill-category-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(58, 134, 255, 0.2);
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
 }

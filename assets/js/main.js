@@ -134,15 +134,24 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             // Populate skills
+           // In your main.js file where you load data
             const skillsContainer = document.getElementById('skills-container');
-            data.skills.forEach(skill => {
-                const item = document.createElement('div');
-                item.className = 'skill-item';
-                item.innerHTML = `
-                    <h3>${skill}</h3>
+
+            for (const [category, skills] of Object.entries(data.skills)) {
+                const categoryDiv = document.createElement('div');
+                categoryDiv.className = 'skill-category';
+                
+                categoryDiv.innerHTML = `
+                    <h3 class="skill-category-title">${category}</h3>
+                    <div class="skill-items">
+                        ${skills.map(skill => `
+                            <div class="skill-item">${skill}</div>
+                        `).join('')}
+                    </div>
                 `;
-                skillsContainer.appendChild(item);
-            });
+                
+                skillsContainer.appendChild(categoryDiv);
+            }
             
             // Populate projects
             const projectsGrid = document.getElementById('projects-grid');
@@ -250,16 +259,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Populate certificates
             const certificatesContainer = document.getElementById('certificates-container');
+
             data.certificates.forEach(cert => {
-                const item = document.createElement('div');
-                item.className = 'certificate-card';
-                item.innerHTML = `
+                const card = document.createElement('div');
+                card.className = 'certificate-card';
+                
+                card.innerHTML = `
                     <h3>${cert.platform}</h3>
                     <ul>
-                        ${cert.achievements.map(ach => `<li>${ach}</li>`).join('')}
+                        ${cert.achievements.map(ach => `
+                            <li>
+                                ${ach.url !== "" ? `
+                                    <a href="${ach.url}" target="_blank" rel="noopener noreferrer">
+                                        ${ach.name}
+                                     </a>
+                                ` : ach.name}
+                            </li>
+                        `).join('')}
                     </ul>
+                    ${cert.profile_url !== "" ? `
+                        <a href="${cert.profile_url}" class="profile-link" target="_blank" rel="noopener noreferrer">
+                            View my ${cert.platform} profile
+                        </a>
+                    ` : ""}
                 `;
-                certificatesContainer.appendChild(item);
+
+                
+                certificatesContainer.appendChild(card);
             });
             
             // Initialize GSAP animations after content is loaded
@@ -293,7 +319,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 opacity: 0,
                 y: 30,
                 duration: 0.5,
-                delay: i * 0.1
+                delay: i * 0.01
             });
         });
 

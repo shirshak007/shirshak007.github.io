@@ -3,7 +3,7 @@
     "name": "Shirshak Das",
     "mobile": "+91 9733456836",
     "email": "shirshak.das007@gmail.com",
-    "address": "Belsingha, Falta South 24, Parganas, WB, India, 743504",
+    "address": "Belsingha, Falta, South 24 Parganas, WB, IN, 743504",
     "dob": "15 July 1996",
     "gender": "Male",
     "bloodGroup": "B+",
@@ -79,32 +79,101 @@
       "period": "January 2019 to June 2019"
     }
   ],
-  "skills": [
-    "PHP", "MySQL", "Codefgniter", "ReactJS", "OOP", "HTML", "Javascript", "CSS", "JQuery", 
-    "Wordpress", "C", "Matlab", "Java", "JSP", "Google API", "Facebook Graph API", 
-    "Zoho Forms Webhooks", "Payment Gateway Integrations", "Linux", "Cronjob", 
-    "using PHP & JS libraries", "Ajax", "Axios", "MaterialUI", "ES6", "PHPMyAdmin", 
-    "Problem Solving"
-  ],
+  "skills": {
+    "Programming Languages": [
+        "PHP",
+        "JavaScript (ES6)",
+        "Java",
+        "C",
+        "Matlab"
+    ],
+    "Web Development": [
+        "HTML",
+        "CSS",
+        "JSP",
+        "Ajax",
+        "Axios",
+        "JQuery"
+    ],
+    "Frameworks & Libraries": [
+        "CodeIgniter (PHP Framework)",
+        "ReactJS (Frontend Library)",
+        "Material UI",
+        "PHP & JS Libraries (usage experience)",
+        "OOP (Object-Oriented Programming)"
+    ],
+    "CMS & Platforms": [
+        "WordPress",
+        "PHPMyAdmin"
+    ],
+    "APIs & Integrations": [
+        "Google API",
+        "Facebook Graph API",
+        "Zoho Forms Webhooks",
+        "Payment Gateway Integrations"
+    ],
+    "Database & Server": [
+        "MySQL",
+        "Linux",
+        "Cronjob"
+    ],
+    "Other Technical Skills": [
+        "Problem Solving"
+    ]
+},
   "certificates": [
-    {
-      "platform": "Hackerrank",
-      "achievements": ["SQL (Basic, Intermediate & Advanced)", "Javascript (Basic & Intermediate)", "Rest API (Intermediate)"]
-    },
-    {
-      "platform": "FreeCodeCamp",
-      "achievements": ["Responsive Web Design"]
-    },
-    {
-      "platform": "HP Life",
-      "achievements": ["AI for Beginners"]
-    }
+	{
+	  "platform": "Hackerrank",
+	  "achievements": [
+	  	{
+		  "name": "Software Engineer",
+		  "url": "https://www.hackerrank.com/certificates/3f3507bf1644"
+		},
+		{
+		  "name": "SQL (Advanced)",
+		  "url": "https://www.hackerrank.com/certificates/f58a2df15bfa"
+		},
+		{
+		  "name": "Javascript (Intermediate)",
+		  "url": "https://www.hackerrank.com/certificates/3c1f5d4eccbd"
+		},
+		{
+		  "name": "Rest API (Intermediate)",
+		  "url": "https://www.hackerrank.com/certificates/c40526bd02c2"
+		},
+		{
+		  "name": "Python (Basic)",
+		  "url": "https://www.hackerrank.com/certificates/49c84b360f60"
+		}
+	  ],
+	  "profile_url": "https://www.hackerrank.com/profile/shirshak_das007"
+	},
+	{
+	  "platform": "FreeCodeCamp",
+	  "achievements": [
+		{
+		  "name": "Responsive Web Design",
+		  "url": "https://www.freecodecamp.org/certification/shirshak007/responsive-web-design"
+		}
+	  ],
+	  "profile_url": "https://www.freecodecamp.org/shirshak007"
+	},
+	{
+	  "platform": "HP Life",
+	  "achievements": [
+		{
+		  "name": "AI for Beginners",
+		  "url": "https://www.life-global.org/certificate/839b19c1-1cb6-4cbb-b7b0-1a5e4113354f"
+		}
+	  ],
+	  "profile_url": ""
+	}
   ],
   "achievements": {
     "stackOverflow": {
-      "acceptedAnswers": "1/4",
-      "badges": "2 silver & 10 bronze",
-      "reach": "15k people"
+      "acceptedAnswers": "15 out of 33",
+      "badges": "3 silver & 11 bronze",
+      "reach": "~16k people"
     }
   },
   "portfolio": {
@@ -160,7 +229,7 @@
 		        "year": "2024"
 		    },
 		    {
-		        "title": "Purple-rumped Sunbird Series",
+		        "title": "Purple-rumped Sunbird",
 		        "image": "assets/images/photography/3.JPG",
 		        "category": "Wildlife",
 		        "year": "2024"
@@ -178,7 +247,7 @@
 		        "year": "2022"
 		    },
 		    {
-		        "title": "Dog",
+		        "title": "Resting Dog",
 		        "image": "assets/images/photography/6.jpg",
 		        "category": "Street",
 		        "year": "2023"
