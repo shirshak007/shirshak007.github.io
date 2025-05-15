@@ -717,7 +717,7 @@ section {
 .contact-form {
     flex: 1;
     background-color: white;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -890,7 +890,7 @@ section {
         display: block;
     }
 .typewriter {
-    fotn-size:24px;
+    font-size:24px;
 }
     .nav-links {
         position: fixed;
@@ -996,6 +996,9 @@ section {
     .achievement-stats {
         flex-direction: column;
         gap: 15px;
+    }
+    .typewriter {
+    font-size:22px;
     }
 }
 
