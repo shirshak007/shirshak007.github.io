@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+# Allow everything else
+Allow: /
+
+# Sitemap
+Sitemap: https://shirshak007.github.io/sitemap.xml
+
