@@ -137,7 +137,7 @@
 		    "topics": ["HTML", "Javascript"]
 		},
 		{
-		    "name": "PHP Email Sendingl",
+		    "name": "PHP Email Sending",
 		    "description": "Send email using core php and gmail",
 		    "url": "https://github.com/shirshak007/core-PHP-Email-Sending",
 		    "topics": ["PHP", "Gmail", "API"]
