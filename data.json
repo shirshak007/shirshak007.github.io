@@ -260,5 +260,14 @@
 		    "Tripod",
 		    "Polarizing Filters"
 		]
+	},
+	"seo" : {
+		  "title": "Shirshak Das | Full Stack Developer | PHP, ReactJS, MySQL Expert",
+		  "description": "Professional portfolio of Shirshak Das - Full Stack Developer specializing in PHP, ReactJS, MySQL, and web application development. View my projects, skills, and experience.",
+		  "keywords": "Full Stack Developer, PHP Developer, ReactJS Developer, Web Developer, Portfolio, Shirshak Das, CodeIgniter, MySQL",
+		  "og_title": "Shirshak Das | Full Stack Developer",
+		  "og_description": "Professional portfolio showcasing my web development projects and skills",
+		  "og_image": "https://shirshak007.github.io/assets/images/portfolio-ss.jpg",
+		  "url": "https://shirshak007.github.io/"
 	}
 }

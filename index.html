@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="site-title"></title>
+    <meta name="keywords">
+    <meta name="description">
     <link rel="icon" href="" id="favicon" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,18 +19,18 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo animate__animated animate__fadeInLeft"><img src=""  id="logo" height="48x;"></a>
+            <a href="#" class="logo animate__animated animate__fadeInLeft"><img src=""  id="logo" height="48x;" width="auto" alt="nav-logo"></a>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#photography" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link active" aria-label="Scroll to home">Home</a></li>
+                <li><a href="#about" class="nav-link" aria-label="Scroll to about section">About</a></li>
+                <li><a href="#experience" class="nav-link" aria-label="Scroll to experience section">Experience</a></li>
+                <li><a href="#skills" class="nav-link" aria-label="Scroll to skills section">Skills</a></li>
+                <li><a href="#projects" class="nav-link" aria-label="Scroll to projects section">Projects</a></li>
+                <li><a href="#photography" class="nav-link" aria-label="Scroll to gallery section">Gallery</a></li>
+                <li><a href="#contact" class="nav-link" aria-label="Scroll to contact section">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -37,7 +39,7 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="animate__animated animate__fadeInDown" data-aos="fade-down" class="typewriter">Hello, I am <br><span id="typewriter"></span></h1>
+                <h1 class="animate__animated animate__fadeInDown" data-aos="fade-down" >Hello, I am <br><span id="typewriter"></span></h1>
                 
                 <div class="hero-btns animate__animated animate__fadeInUp animate__delay-3s" data-aos="fade-up" data-aos-delay="600">
                     <a href="#contact" class="btn btn-primary">Hire Me</a>
@@ -47,12 +49,12 @@
             </div>
             <div class="hero-image" >
                 <div class="image-wrapper">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Profile Photo" class="profile-img" id="profile-img">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Profile Photo" class="profile-img" id="profile-img" loading="lazy" >
                     <div class="circle-animation" data-aos-delay="800" ></div>
                 </div>
             </div>
         </div>
-        <a href="#about" class="scroll-down">
+        <a href="#about" class="scroll-down" aria-label="Scroll to about section">
             <i class="fas fa-chevron-down"></i>
         </a>
     </section>
@@ -63,7 +65,7 @@
             <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
             <div class="about-content">
                 <div class="about-image" data-aos="fade-right">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="About Me Image" id="about-img">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="About Me Image" id="about-img" width="auto" height="auto">
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-delay="200">
                     <h3>Who am I?</h3>
@@ -89,9 +91,9 @@
                     </div>
                     
                     <div class="social-links">
-                        <a id="github-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        <a id="linkedin-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a id="email-link"  target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+                        <a id="github-link" target="_blank" rel="noopener noreferrer" aria-label="Github Link"><i class="fab fa-github"></i></a>
+                        <a id="linkedin-link" target="_blank" rel="noopener noreferrer"  aria-label="Linkedin Link"><i class="fab fa-linkedin"></i></a>
+                        <a id="email-link"  target="_blank" rel="noopener noreferrer"  aria-label="Email Link"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
@@ -217,12 +219,12 @@
                         <span id="contact-address"></span>
                     </div>
                     <div class="social-links">
-                        <a id="contact-github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        <a id="contact-linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a id="contact-github" target="_blank" rel="noopener noreferrer"  aria-label="Github Contact Link"><i class="fab fa-github"></i></a>
+                        <a id="contact-linkedin" target="_blank" rel="noopener noreferrer" aria-label="Linkedin Contact Link"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="contact-form" data-aos="fade-left" data-aos-delay="200">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaK5Nh69DqM9N6ShEh4odTpfnjsfurhugfavkJVHpWjbRc2Q/viewform?embedded=true" width="100%" height="776" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaK5Nh69DqM9N6ShEh4odTpfnjsfurhugfavkJVHpWjbRc2Q/viewform?embedded=true" width="100%" height="776" frameborder="0" marginheight="0" marginwidth="0" title="Google Form Contact">Loading…</iframe>
                 </div>
             </div>
         </div>
@@ -233,7 +235,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#" class="logo"><img src=""  id="logo-footer" height="60px;"><span>.</span></a>
+                    <a href="#" class="logo"><img src=""  id="logo-footer" width="auto" height="60px;" alt="footer-logo"  loading="lazy"><span>.</span></a>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
@@ -256,7 +258,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Shirshak Das. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Shirshak Das.</p>
             </div>
         </div>
     </footer>

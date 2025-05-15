@@ -50,6 +50,50 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
+            //SEO
+            // Meta: description
+            const desc = document.querySelector('meta[name="description"]') || document.createElement('meta');
+            desc.name = 'description';
+            desc.content = data.seo.description;
+            document.head.appendChild(desc);
+
+            // Meta: keywords
+            const keywords = document.querySelector('meta[name="keywords"]') || document.createElement('meta');
+            keywords.name = 'keywords';
+            keywords.content = data.seo.keywords;
+            document.head.appendChild(keywords);
+
+            // Open Graph tags
+            const ogTags = [
+                { property: 'og:type', content: 'website' },
+                { property: 'og:url', content: data.seo.url },
+                { property: 'og:title', content: data.seo.og_title },
+                { property: 'og:description', content: data.seo.og_description },
+                { property: 'og:image', content: data.seo.og_image }
+            ];
+            ogTags.forEach(tagData => {
+            const tag = document.createElement('meta');
+                tag.setAttribute('property', tagData.property);
+                tag.setAttribute('content', tagData.content);
+                document.head.appendChild(tag);
+            });
+
+            // Twitter tags
+            const twitterTags = [
+                { name: 'twitter:card', content: 'summary_large_image' },
+                { name: 'twitter:url', content: data.seo.url },
+                { name: 'twitter:title', content: data.seo.og_title },
+                { name: 'twitter:description', content: data.seo.og_description },
+                { name: 'twitter:image', content: data.seo.og_image }
+            ];
+            twitterTags.forEach(tagData => {
+                const tag = document.createElement('meta');
+                tag.setAttribute('name', tagData.name);
+                tag.setAttribute('content', tagData.content);
+                document.head.appendChild(tag);
+            });
+              
+              
             //Title, logo etc
             document.getElementById('site-title').textContent = data.personal.name + " | Portfolio";
             document.getElementById('logo').src = data.personal.logo;
@@ -185,7 +229,7 @@ data.experience.forEach((exp, index) => {
                     card.className = 'project-card';
                     card.innerHTML = `
                         <div class="github-card-header">
-                            <img src="assets/images/github-mark.png" alt="GitHub" class="github-logo">
+                            <img src="assets/images/github-mark.png" alt="GitHub" class="github-logo" loading="lazy" >
                             <h3>${project.name}</h3>
                         </div>
                         <div class="github-card-body">
@@ -221,9 +265,9 @@ data.experience.forEach((exp, index) => {
                     const photoCard = document.createElement('div');
                     photoCard.className = `photo-card ${photo.category.toLowerCase()}`;
                     photoCard.innerHTML = `
-                        <img src="${photo.image}" alt="${photo.title}" class="photo-img">
+                        <img src="${photo.image}" alt="${photo.title}" class="photo-img" loading="lazy" >
                         <div class="photo-overlay">
-                            <h4 class="photo-title">${photo.title}</h4>
+                            <h5 class="photo-title">${photo.title}</h5>
                             <div class="photo-meta">
                                 <span>${photo.category}</span>
                                 <span>${photo.year}</span>
@@ -362,6 +406,44 @@ data.experience.forEach((exp, index) => {
     }
     
     
+});
+
+// Get all navigation links
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Add click event listeners
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Remove active class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // Optional: Smooth scroll implementation
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
+// Add scroll spy to update active class
+window.addEventListener('scroll', () => {
+    const currentPos = window.scrollY;
+    
+    navLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if (section.offsetTop <= currentPos + 150 && 
+            section.offsetTop + section.offsetHeight > currentPos + 150) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
 });
 
 /*
