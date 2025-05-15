@@ -889,7 +889,9 @@ section {
     .menu-toggle {
         display: block;
     }
-
+.typewriter {
+    fotn-size:24px;
+}
     .nav-links {
         position: fixed;
         top: 80px;
@@ -1002,7 +1004,9 @@ section {
       color: #4569a8;
       min-height: 1.5em; /* reserve vertical space */
     }
-
+.typewriter {
+       font-size:38px,;
+}
     .typed-cursor {
       font-weight: normal;
       font-size: 1em;
