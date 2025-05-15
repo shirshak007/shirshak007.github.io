@@ -27,6 +27,7 @@ A modern, responsive portfolio website showcasing my projects, skills, and photo
   - [Particles.js](https://github.com/VincentGarreau/particles.js/)
   - [GSAP](https://greensock.com/gsap/) for animations
   - [AOS](https://github.com/michalsnik/aos) for scroll animations
+  - [typed.js](https://github.com/mattboldt/typed.js/) for typewriter effect
 - **Design**: Custom CSS with Flexbox and Grid
 - **Icons**: [Font Awesome](https://fontawesome.com/)
 
