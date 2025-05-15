@@ -52,7 +52,7 @@ portfolio/
 
 1. Clone the repository:
 <pre>
-git clone https://github.com/shirshak007/portfolio.git
+git clone https://github.com/shirshak007/shirshak007.github.io.git
 </pre>
 
 2. Navigate to project directory:
