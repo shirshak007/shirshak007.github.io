@@ -103,11 +103,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Populate personal info
             document.getElementById('name').textContent = data.personal.name;
             document.getElementById('email').textContent = data.personal.email;
-            document.getElementById('mobile').textContent = data.personal.mobile;
+            //document.getElementById('mobile').textContent = data.personal.mobile;
             document.getElementById('address').textContent = data.personal.address;
             
             // Contact section
-            document.getElementById('contact-mobile').textContent = data.personal.mobile;
+            //document.getElementById('contact-mobile').textContent = data.personal.mobile;
             document.getElementById('contact-email').textContent = data.personal.email;
             document.getElementById('contact-address').textContent = data.personal.address;
             document.getElementById('contact-github').href = 'https://' + data.portfolio.github;
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('about-me').textContent= data.personal.about;
             
             // Footer
-            document.getElementById('footer-mobile').textContent = data.personal.mobile;
+            //document.getElementById('footer-mobile').textContent = data.personal.mobile;
             document.getElementById('footer-email').textContent = data.personal.email;
             document.getElementById('footer-address').textContent = data.personal.address;
             
