@@ -62,7 +62,7 @@ cd portfolio
 </pre>
 
 3. Open in your browser:
-- Simply open `index.html` in your preferred browser (Note: Fetch api can mot read json file, use local server)
+- Simply open `index.html` in your preferred browser (Note: Fetch api can not read json file, use local server)
 - [Recommended] use a local server (for better performance):
 <pre>
 python -m http.server 8000
