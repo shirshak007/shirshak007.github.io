@@ -184,7 +184,7 @@
 		{
 		    "name": "Timetable in Dynamic Timeline",
 		    "description": "In this PHP class-routine/schedule each class is placed dynamically in various time of a day-timeline. Suppose a class starts at 10 AM , it will automatically be placed after 10 AM mark horizontally.",
-		    "url": "https://github.com/shirshak007/php-timetable-in-dynamic-timelinehttps://github.com/shirshak007/erp-system",
+		    "url": "https://github.com/shirshak007/php-timetable-in-dynamic-timeline",
 		    "topics": ["PHP", "HTML", "JSON", "CSS", "Javascript", "JQuery"]
 		},
 		{
